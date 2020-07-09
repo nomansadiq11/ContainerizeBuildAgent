@@ -44,6 +44,8 @@ RUN apt-get install python3.6
 RUN curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 RUN python get-pip.py
 
+# iNSTALL ANGULAR CLI 
+RUN npm install -g angular-cli
 
 
 WORKDIR /azp
