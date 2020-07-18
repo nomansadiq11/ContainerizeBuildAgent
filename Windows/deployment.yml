@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: windowscontainer
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: WCTest
+  template:
+    metadata:
+      labels:
+        app: WCTest
+    spec:
+      containers:
+      - name: windowscontainer
+        image: mcr.microsoft.com/windows/servercore:ltsc2019
+        imagePullPolicy: Always 
+        ports:
+        - containerPort: 80
