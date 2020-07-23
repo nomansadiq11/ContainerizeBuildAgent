@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: windowscontainer
-        image: mcr.microsoft.com/windows/servercore:ltsc2019
+        image: nomansadiq11/todo-application:latest
         imagePullPolicy: Always 
         ports:
         - containerPort: 80
